@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { github, instragram, linkedin } from "../assets";
 
 const Hero = () => {
   return (
@@ -16,16 +17,35 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Adrian</span>
+            Hi, I'm
+            <br />
+            <span className='text-[#915EFF]'>Pasindu Randika</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className='sm:block hidden' />
-            interfaces and web applications
+          <p className={`${styles.heroSubText} mt-3 text-white-100`}>
+            Full Stack Developer <br className='sm:block hidden' />
+            Expertise in Node.js and React.
           </p>
+
+          <div class="flex gap-5 mt-10 sm:gap-10">
+            <a href="https://github.com/alphajr009" target="_blank">
+              <img src={github} alt='GitHub' class="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20" />
+            </a>
+            <a href="https://www.linkedin.com/in/pasindurandika/" target="_blank">
+              <img src={linkedin} alt='LinkedIn' class="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20" />
+            </a>
+            <a href="https://www.instagram.com/alphajr_09/" target="_blank">
+              <img src={instragram} alt='Instagram' class="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20" />
+            </a>
+
+          </div>
+
+
+
         </div>
+
+
       </div>
 
-      <ComputersCanvas />
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
