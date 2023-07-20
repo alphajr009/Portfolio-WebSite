@@ -8,6 +8,7 @@ import linkedin from "./linkedin.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import instragram from "./instagram.png";
+import live from "./live.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -37,6 +38,9 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import sliit from "./sliit.png";
 import richmond from "./richmond.png";
+import worklk from "./worklk.png";
+import sushiman from "./sushiman.png";
+import tripgenie from "./tripgenie.png";
 
 
 import cv from "./Pasindu-Randika-CV.pdf";
@@ -79,5 +83,9 @@ export {
   python,
   sql,
   firebase,
+  live,
+  worklk,
+  sushiman,
+  tripgenie,
 
 };

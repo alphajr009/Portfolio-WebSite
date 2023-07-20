@@ -18,20 +18,17 @@ const Hero = () => {
         </div>
 
         <div>
-          <motion.div
-            initial="hidden"
-            animate="show"
-            variants={fadeAndSlideIn(0)}>
-            <h1 className={`${styles.heroHeadText} text-white`}>
-              Hi, I'm
-              <br />
-              <span className='text-[#915EFF]'>Pasindu Randika</span>
-            </h1>
-            <p className={`${styles.heroSubText} mt-3 text-white-100`}>
-              Full Stack Developer <br className='sm:block hidden' />
-              Expertise in Node.js and React.
-            </p>
-          </motion.div>
+
+          <h1 className={`${styles.heroHeadText} text-white`}>
+            Hi, I'm
+            <br />
+            <span className='text-[#915EFF]'>Pasindu Randika</span>
+          </h1>
+          <p className={`${styles.heroSubText} mt-3 text-white-100`}>
+            Full Stack Developer <br className='sm:block hidden' />
+            Expertise in Node.js and React.
+          </p>
+
 
           <div class="flex gap-5 mt-10 sm:gap-10">
             <a href="https://github.com/alphajr009" target="_blank">

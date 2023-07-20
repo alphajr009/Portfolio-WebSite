@@ -25,6 +25,9 @@ import {
   python,
   sql,
   firebase,
+  worklk,
+  sushiman,
+  tripgenie,
 } from "../assets";
 
 export const navLinks = [
@@ -199,12 +202,20 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "GUIDEYFY",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web app connects travelers with property owners, offering accommodation solutions. Reservations made through online booking; aims to streamline booking process.",
     tags: [
       {
         name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "express",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "node",
         color: "blue-text-gradient",
       },
       {
@@ -212,54 +223,143 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "antd",
         color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/alphajr009/GUIDEYFY---Room-Reservation-and-Selling-System",
+    live_link: "https://guideyfy.herokuapp.com/",
   },
   {
-    name: "Job IT",
+    name: "T Shirt Customizer",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Website provides an engaging platform for users to create their own personalized t-shirts.  users can enjoy a real-time color and logo customization experience.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
+        name: "threejs",
+        color: "blue-text-gradient",
       },
       {
-        name: "scss",
+        name: "vitejs",
+        color: "blue-text-gradient ",
+      },
+      {
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/alphajr009/T-Shirt-Customized-WebSite",
+    live_link: "https://tshirt-customize-ee6fea606ead.herokuapp.com/",
   },
   {
-    name: "Trip Guide",
+    name: "AdilRooms",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A comprehensive travel booking platform that allows users to book hotels, and rooms, and offers curated recommendations for popular destinations.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "express",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "node",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
         color: "green-text-gradient",
+      },
+      {
+        name: "antd",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/alphajr009/Adil---Rooms-Reservation-System",
+    live_link: "https://adil-room-reservation.herokuapp.com/",
+  },
+  {
+    name: "SUSHIMAN",
+    description:
+      "This website is created to learning to make responsive website. This is a simple website that is created for a Sushi Restaurant only frontend is operational and backend inactive.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "vitejs",
+        color: "blue-text-gradient",
       },
       {
         name: "css",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: sushiman,
+    source_code_link: "https://github.com/alphajr009/Sushi-Ordering-WebSite",
+    live_link: "https://sushi-app-dee1355544ca.herokuapp.com/",
+  },
+  {
+    name: "TripGenie",
+    description:
+      "This Web Application help for seamless trip planning, providing personalized recommendations for hotels, activities, and dining based on location and preferences.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "express",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "node",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "antd",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripgenie,
+    source_code_link: "https://github.com/alphajr009/Online-Travel-Planner",
+    live_link: "https://github.com/alphajr009/Online-Travel-Planner",
+  },
+  {
+    name: "WorkLK",
+    description:
+      "Empower Sri Lankan job seekers with a mobile app offering relevant work opportunities, giving control over their job search, aiding the economic crisis.",
+    tags: [
+      {
+        name: "kotlin",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "androidstudio",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "green-text-gradient",
+      },
+    ],
+    image: worklk,
+    source_code_link: "https://github.com/alphajr009/WorkLK-MAD-Project",
+    live_link: "https://www.youtube.com/watch?v=bPD36R9yqBM",
   },
 ];
 
