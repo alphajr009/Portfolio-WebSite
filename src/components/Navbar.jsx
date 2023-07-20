@@ -4,11 +4,13 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
+import { cv } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -56,8 +58,11 @@ const Navbar = () => {
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
+
             </li>
           ))}
+          <a href={cv} download="Pasindu-Randika-CV">CV</a>
+
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
@@ -86,6 +91,9 @@ const Navbar = () => {
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
+
+              <a href={cv} download="Pasindu-Randika-CV">CV</a>
+
             </ul>
           </div>
         </div>

@@ -3,12 +3,14 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import { github, instragram, linkedin } from "../assets";
+import { fadeAndSlideIn } from "../utils/motion";
+
 
 const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[150px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
@@ -16,15 +18,20 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm
-            <br />
-            <span className='text-[#915EFF]'>Pasindu Randika</span>
-          </h1>
-          <p className={`${styles.heroSubText} mt-3 text-white-100`}>
-            Full Stack Developer <br className='sm:block hidden' />
-            Expertise in Node.js and React.
-          </p>
+          <motion.div
+            initial="hidden"
+            animate="show"
+            variants={fadeAndSlideIn(0)}>
+            <h1 className={`${styles.heroHeadText} text-white`}>
+              Hi, I'm
+              <br />
+              <span className='text-[#915EFF]'>Pasindu Randika</span>
+            </h1>
+            <p className={`${styles.heroSubText} mt-3 text-white-100`}>
+              Full Stack Developer <br className='sm:block hidden' />
+              Expertise in Node.js and React.
+            </p>
+          </motion.div>
 
           <div class="flex gap-5 mt-10 sm:gap-10">
             <a href="https://github.com/alphajr009" target="_blank">
@@ -38,9 +45,6 @@ const Hero = () => {
             </a>
 
           </div>
-
-
-
         </div>
 
 
