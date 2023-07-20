@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "cd client && npm install",
-    "build2": "cd client && npm install react-scripts",
-    "build3": "cd client && npm install vite",
+    "build": "cd client && npm install --legacy-peer-deps",
+    "build2": "cd client && npm install react-scripts --legacy-peer-deps",
+    "build3": "cd client && npm install vite --legacy-peer-deps",
     "install-client": "cd client && npm run build",
     "heroku-postbuild": "npm run build2 && npm run build3 && npm run build && npm run install-client ",
     "start": "nodemon index",
