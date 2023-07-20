@@ -5,13 +5,16 @@
   "main": "index.js",
   "scripts": {
     "build": "cd client && npm install --legacy-peer-deps",
-    "build2": "cd client && npm install react-scripts --legacy-peer-deps",
     "build3": "cd client && npm install vite --legacy-peer-deps",
-    "install-client": "cd client && npm run build",
-    "heroku-postbuild": "npm run build2 && npm run build3 && npm run build && npm run install-client ",
-    "start": "nodemon index",
+    "install-client": "cd client && npm run build ",
+    "heroku-prebuild": "export NPM_CONFIG_PRODUCTION=false; npm run build3 && npm run build --only=dev",
+    "heroku-postbuild": "npm run install-client",
+    "start": "node index.js",
     "client": "cd client && npm run dev"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
