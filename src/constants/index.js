@@ -15,14 +15,16 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
   threejs,
+  sliit,
+  richmond,
+  java,
+  python,
+  sql,
+  firebase,
 } from "../assets";
 
 export const navLinks = [
@@ -42,32 +44,25 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend Developer",
     icon: web,
-  },
-  {
-    title: "React Native Developer",
-    icon: mobile,
   },
   {
     title: "Backend Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Mobile App Developer",
+    icon: mobile,
+  },
+  {
+    title: "Social Media Manager",
     icon: creator,
   },
 ];
 
-const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
+const languages = [
+
   {
     name: "JavaScript",
     icon: javascript,
@@ -77,13 +72,35 @@ const technologies = [
     icon: typescript,
   },
   {
+    name: "Java",
+    icon: java,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "HTML5",
+    icon: html,
+  },
+  {
+    name: "CSS3",
+    icon: css,
+  },
+  {
+    name: "PHP",
+    icon: docker,
+  },
+];
+
+
+
+const frameworks = [
+  {
     name: "React JS",
     icon: reactjs,
   },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
+
   {
     name: "Tailwind CSS",
     icon: tailwind,
@@ -93,80 +110,64 @@ const technologies = [
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
+    name: "Bootstrap",
     icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 
+
+
+
+
+const databases = [
+  {
+    name: "MongoDB",
+    icon: mongodb,
+  },
+
+  {
+    name: "MYSQL",
+    icon: sql,
+  },
+  {
+    name: "Firebase",
+    icon: firebase,
+  },
+
+];
+
+
+
+
+
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Bachelor's Degree",
+    company_name: "Sri Lanka Institute of Information Technology",
+    icon: sliit,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "2021- Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Currently pursuing a Bachelor's Degree in Information Technology specializing in Information Technology.",
+      "Colloborate with Room Reservation and Selling System developed using MERN Stack.",
+      "Designed and developed a mobile application called WorkLK using Kotlin.",
+      "Developed and deployed web applications for Academics using React.js , Node.js ,Java and other related technologies.",
+      "Active member of the University's Gaming Community.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Advanced Level",
+    company_name: "Richmond College",
+    icon: richmond,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "2017 - 2020",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Passed General Certificate Advanced Level Exam in Physical stream with 2 S (Physics, Chemistry) and 1 C (Mathematics) Passes.",
+      "Member of Media Unit of the School.",
+      "Participated in many extra curricular activities including sports, drama and dancing.",
     ],
   },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+
 ];
 
 const testimonials = [
@@ -262,4 +263,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, languages, experiences, testimonials, projects, frameworks, databases };

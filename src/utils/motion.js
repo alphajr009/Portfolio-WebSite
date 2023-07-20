@@ -86,3 +86,25 @@ export const staggerContainer = (staggerChildren, delayChildren) => {
     },
   };
 };
+
+
+export const fadeAndSlideIn = (delay) => {
+  return {
+    hidden: {
+      x: 100,
+      y: 0,
+      opacity: 0,
+    },
+    show: {
+      x: 0,
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "tween",
+        delay: delay,
+        duration: 1.5,
+        ease: "easeOut",
+      },
+    },
+  };
+};

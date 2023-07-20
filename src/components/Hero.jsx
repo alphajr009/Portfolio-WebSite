@@ -2,12 +2,15 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { github, instragram, linkedin } from "../assets";
+import { fadeAndSlideIn } from "../utils/motion";
+
 
 const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[150px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
@@ -15,17 +18,38 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Adrian</span>
-          </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className='sm:block hidden' />
-            interfaces and web applications
-          </p>
+          <motion.div
+            initial="hidden"
+            animate="show"
+            variants={fadeAndSlideIn(0)}>
+            <h1 className={`${styles.heroHeadText} text-white`}>
+              Hi, I'm
+              <br />
+              <span className='text-[#915EFF]'>Pasindu Randika</span>
+            </h1>
+            <p className={`${styles.heroSubText} mt-3 text-white-100`}>
+              Full Stack Developer <br className='sm:block hidden' />
+              Expertise in Node.js and React.
+            </p>
+          </motion.div>
+
+          <div class="flex gap-5 mt-10 sm:gap-10">
+            <a href="https://github.com/alphajr009" target="_blank">
+              <img src={github} alt='GitHub' class="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20" />
+            </a>
+            <a href="https://www.linkedin.com/in/pasindurandika/" target="_blank">
+              <img src={linkedin} alt='LinkedIn' class="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20" />
+            </a>
+            <a href="https://www.instagram.com/alphajr_09/" target="_blank">
+              <img src={instragram} alt='Instagram' class="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20" />
+            </a>
+
+          </div>
         </div>
+
+
       </div>
 
-      <ComputersCanvas />
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
